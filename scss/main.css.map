@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,KAAK,CAAA;EACL,aAAa,CAAA,kBAAC;EACd,eAAe,CAAA,mBAAC;EAChB,aAAa,CAAA,mBAAC;EACd,WAAW,CAAA,mBAAC;EACZ,cAAc,CAAA,mBAAC;CACd",
+    "sources": [
+        "main.scss",
+        "_global.scss",
+        "_custom.scss",
+        "_responsive.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
