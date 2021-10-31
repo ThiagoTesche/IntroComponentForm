@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    @include fontGlobal;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/bg-intro-desktop.png);
+    background-color: var(--primary-Red);
+}
+
+/* main */
+
+main{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.container{
+    width: 100%;
+    max-width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+
+    .left-side{
+        width: 50%;
+        vertical-align: middle;
+        align-items: center;
+
+        .text{
+            width: 100%;
+            height: 50%;
+            margin: 0 auto;
+            margin-top: 120px;
+            vertical-align: middle;
+
+            .title{
+                margin: 0 auto;
+                margin-top: 20px;
+                line-height: 1.2em;
+                font-size: 2em;
+                width: 60%;
+                text-align: left;
+            }
+
+            .description{
+                width: 90%;
+                font-size: 0.65em;
+                padding: 0 50px;
+                margin: 20px auto;
+                margin-left: 50px;
+            }
+        }
+    }
+
+    .right-side{
+        width: 50%;
+        padding: 0 30px;
+
+        .button-container{
+            padding: 10px 20px;
+            text-align: center;
+
+            .btn{
+                width: 100%;
+                margin: 0 auto;
+                padding: 0 30px;
+                background-color: var(--accent-Blue);
+                border: none;
+                border-radius: 4px;
+                height: 40px;
+                font-size: 0.8em;
+                box-shadow: 0.1px 4px 1px rgba(0, 0, 0, 0.226);
+
+                .btn-span{
+                    font-size: 1em;
+                    font-weight: bold;
+                }
+            }
+        }
+
+        .inputs-all{
+            padding: 0 30px;
+            background-color: #fff;
+            width: 100%;
+            height: 80%;
+            border-radius: 6px;
+            width: 91%;
+            margin: 10px auto;
+
+            .input-wrapper:first-child{
+                padding-top: 20px;
+                
+            }
+
+            .input-wrapper{
+                text-align: right;
+
+                .input{
+                    width: 100%;
+                    height: 35px;
+                    font-size: 0.8em;
+                    border-radius: 3px;
+                    border: 1px solid rgb(158, 156, 156);
+                    text-indent: 20px;
+                    color: var(--Dark-Blue);
+                    margin-bottom: 5px;
+                }
+
+                    /*Error do input */
+                    .error{
+                        color: var(--primary-Red);
+                        outline: 1px solid var(--primary-Red); 
+                        border: none;   
+                    }
+
+                    .error::placeholder{
+                        color: #fff;
+                        background-image: url(/images/icon-error.svg);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        background-position-x: 96%;
+                    }
+
+                    /*****/
+                
+                cite.error-message{
+                    color: var(--primary-Red);
+                    font-size: 0.5em;
+                    line-height: 0.1px;
+                    margin-top: -10px;
+                    padding-top: 0;
+                    height: 0px;
+                    text-align: right;
+                    visibility: hidden;
+                }
+
+                
+    
+                input[type=button]{
+                    width: 100%;
+                    border: none;
+                    border-radius: 3px;
+                    padding: 4px 20px;
+                    box-shadow: 0.1px 1px 2px var(--primary-Green);
+                    background-color: var(--primary-Green);
+                    text-transform: uppercase;
+                    text-align: center;
+                    cursor: pointer;
+                    margin-top: 20px;
+                }
+            }
+
+            .term-of-use{
+                color: var(--Dark-Blue);
+                font-size: 0.5em;
+                margin-top: 8px;
+                text-align: center;
+
+                span.term-of-use-span{
+                    color: var(--primary-Red);
+                    font-size: 1em;
+                    font-weight: bold;
+                }
+            } 
+        }
+    }
+}
+
+
+
