@@ -137,6 +137,12 @@ main {
 }
 
 .container .right-side .inputs-all .input-wrapper .error {
+  width: 100%;
+  height: 35px;
+  font-size: 0.8em;
+  border-radius: 3px;
+  text-indent: 20px;
+  margin-bottom: 5px;
   color: var(--primary-Red);
   outline: 1px solid var(--primary-Red);
   border: none;
@@ -185,7 +191,7 @@ main {
   visibility: hidden;
 }
 
-.container .right-side .inputs-all .input-wrapper input[type=button] {
+.container .right-side .inputs-all .input-wrapper input[type=submit] {
   width: 100%;
   border: none;
   border-radius: 3px;
